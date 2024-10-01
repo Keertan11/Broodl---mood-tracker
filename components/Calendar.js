@@ -18,7 +18,7 @@ const Calendar = (props) => {
 
   const monthNow = new Date(selectedYear, Object.keys(months).indexOf(selectedMonth), 1)
   const firstDayOfMonth = monthNow.getDay()
-  const daysInMonth = new Date(selectedYear, Object.keys(selectedMonth).indexOf(selectedMonth) + 1, 0).getDate()
+  const daysInMonth = new Date(selectedYear, Object.keys(months).indexOf(selectedMonth) + 1, 0).getDate()
 
   const numericMonth = monthsArr.indexOf(selectedMonth)
   const data = completeData?.[selectedYear]?.[numericMonth] || {}
