@@ -26,7 +26,7 @@ const Dashboard = () => {
         }
       }
     }
-    return {Streak: total_number_of_days, average_mood: sum_moods/total_number_of_days}
+    return {Streak: total_number_of_days, average_mood: parseFloat(sum_moods/total_number_of_days)}
   }
   
   const statuses = {
